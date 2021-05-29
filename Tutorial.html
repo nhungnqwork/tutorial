@@ -203,6 +203,51 @@ img.hover-shadow {
   top: 200px;
   background-color: #555
 }
+
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  -ms-flex: 50%; /* IE 10 */
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
 </style>
 
 <div class="bg-image">
@@ -221,7 +266,7 @@ img.hover-shadow {
 
 <div class="bg-text">
   <h2>KỈ NIỆM VỀ TỰA GAME BOOM ONLINE</h2>
-  <p style="font-size:20px">Nơi chia sẻ về những trải nghiệm và những kỉ niệm đáng nhớ cùng Domi.<br>Lâu quá rồi mình cũng không online nên tay chơi còn kém.<br> Mọi người thông cảm nhé. Cùng ôn lại kỉ niệm nào !</p>
+  <p style="font-size:13px">Nơi chia sẻ về những trải nghiệm và những kỉ niệm đáng nhớ cùng Domi.<br>Lâu quá rồi mình cũng không online nên tay chơi còn kém.<br> Mọi người thông cảm nhé. Cùng ôn lại kỉ niệm nào !</p>
   <p>And I'm a BOOMER</p>
 </div>
 
@@ -238,10 +283,62 @@ img.hover-shadow {
 		<div id="account">
 		<br><br><br>
 	<h2 class="tt"></h2>
-	<p></p>
+<h2 style="text-align:center">Thông tin tài khoản IDMINI</h2>
+
+
+  <!-- Header -->
+<div class="header" id="myHeader">
+  <h1>KHO ĐỒ</h1>
+  <p>KHO ĐỒ GỒM 48 Ô CHỨA LỰA THAY MỎI TAY SỬ DỤNG VẬT PHẨM THẢ GA.<br>Kéo xuống mục cài đặt tải có account free trải nghiệm game.</p>
+<!--   <button class="btn" onclick="one()">1</button>
+ -->  <button class="btn active" onclick="two()">1</button>
+  <button class="btn" onclick="four()">2</button>
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="assets/img/about/n1.png" style="width:100%">
+    <img src="assets/img/about/n2.png" style="width:100%">
+    <img src="assets/img/about/n3.png" style="width:100%">
+    <img src="assets/img/about/n4.png" style="width:100%">
+    <img src="assets/img/about/n5.png" style="width:100%">
+    <img src="assets/img/about/n6.png" style="width:100%">
+    <img src="assets/img/about/n7.png" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="assets/img/about/n8.png" style="width:100%">
+    <img src="assets/img/about/n9.png" style="width:100%">
+    <img src="assets/img/about/n10.png" style="width:100%">
+    <img src="assets/img/about/n1.png" style="width:100%">
+    <img src="assets/img/about/n2.png" style="width:100%">
+    <img src="assets/img/about/n3.png" style="width:100%">
+    <img src="assets/img/about/n4.png" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="assets/img/about/n4.png" style="width:100%">
+    <img src="assets/img/about/n5.png" style="width:100%">
+    <img src="assets/img/about/n6.png" style="width:100%">
+    <img src="assets/img/about/n7.png" style="width:100%">
+    <img src="assets/img/about/n8.png" style="width:100%">
+    <img src="assets/img/about/n9.png" style="width:100%">
+    <img src="assets/img/about/n10.png" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="assets/img/about/n1.png" style="width:100%">
+    <img src="assets/img/about/n2.png" style="width:100%">
+    <img src="assets/img/about/n3.png" style="width:100%">
+    <img src="assets/img/about/n4.png" style="width:100%">
+    <img src="assets/img/about/n5.png" style="width:100%">
+    <img src="assets/img/about/n6.png" style="width:100%">
+    <img src="assets/img/about/n7.png" style="width:100%">
+  </div>
+</div>
+
+<br><br>
+
 	<h3>Qúa trình lên SS10</h3> 
 	<p>Xem thông tin và mua bán acc. Click vào từng ảnh</p>
-	<h2 style="text-align:center">Thông tin tài khoản IDMINI</h2>
 
 <div class="row">
   <div class="column">
@@ -251,10 +348,10 @@ img.hover-shadow {
     <img src="assets/img/about/b1.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
   </div>
   <div class="column">
-    <img src="assets/img/about/b3.gif" style="width:100%" height="190px" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    <img src="assets/img/about/b3.gif" style="width:100%" height="160px" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
   </div>
   <div class="column">
-    <img src="assets/img/about/b4.png" style="width:100%" height="190px" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+    <img src="assets/img/about/b4.png" style="width:100%" height="160px" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
   </div>
  
 </div>
@@ -312,14 +409,37 @@ img.hover-shadow {
 	<p>Trong chế độ Đấu trường, bạn sẽ chiến đấu với các NPC (Non-Playing Characters) đó là những nam/nữ ca sĩ Hàn Quốc và 4 quái vật. Trước khi chiến đấu, bạn có thể tùy chỉnh mức độ của sự khó, và các NPC khác nhau có các thuộc tính khác nhau. Cùng siêu bé bỏng trải nghiệm nào !</p><br>
 	<iframe width="850" height="480" src="https://www.youtube.com/embed/A7OexOBsFlk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </iframe>
+  <p>Chiến đấu cùng các NPC nam ca sĩ FULL LV3/4</p>
+<iframe width="850" height="480" src="https://www.youtube.com/embed/-ote-3jMYpg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
 	<br><br>
 	<h3>II.  Chế độ nhiệm vụ</h3>
 	<p>Ở chế độ Nhiệm Vụ, các nhân vật hợp lại thành một đội và họ phải hợp sức để đánh bại những con quái vật và trùm (boss) ở các màn, trước khi hết thời gian. <br>Có 3 màn: Hai màn đầu có những con quái vật và màn cuối cùng có Boss. <br>Nếu bạn đánh bại các Boss, rất nhiều vàng sẽ xuất hiện như là một giải thưởng. Ngoài ra, người bắt Boss sẽ được tặng thêm vàng, số lượng được xác định bởi mỗi bản đồ.</p><br>
 	<iframe width="850" height="480" src="https://www.youtube.com/embed/XH2EhYV4RDo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br><br>
-
+<br>
 	<h2 class="tt">HƯỚNG DẪN CÀI ĐẶT VÀ TẠO TÀI KHOẢN GAME BOOM ONLINE SERVER TAIWAN</h2>
-	<i class="ic fa fa-spinner fa-4x" aria-hidden="true"></i> 
+	<i class="ic fa fa-spinner fa-4x" aria-hidden="true"></i> <br><br><br>
+  <b>Account free</b>
+  ID: DomiNg
+  PASS: <a href="tel: +840583488879">Call</a>
+  <p>
+-ID: VNx00
+-ID: VNx0
+-ID: VNx1
+-ID: VNx02
+-ID: VNx2
+-ID: VNx03
+-ID: VNx04
+-ID: VNx4
+-ID: Viet01
+-ID: Viet02
+-ID: HoagSa
+-ID: TrugSa
+-ID: BacNam
+-ID: Hoangg
+👉 MẬT KHẨU: boomonlinevn
+<br> CRE: Chia Sẻ Kinh Nghiệm-Boom Online Taiwan
+</p>
 </div>
 
 	<div id="qr">
@@ -379,6 +499,50 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
 </script>
+
+<script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+// Full-width images
+function one() {
+    for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "100%";  // IE10
+    elements[i].style.flex = "100%";
+  }
+}
+
+// Two images side by side
+function two() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "50%";  // IE10
+    elements[i].style.flex = "50%";
+  }
+}
+
+// Four images side by side
+function four() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "25%";  // IE10
+    elements[i].style.flex = "25%";
+  }
+}
+
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myHeader");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
 
 </body>
 	
