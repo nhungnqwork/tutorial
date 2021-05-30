@@ -12,6 +12,9 @@
 .ic{
 	margin-left: 350px;
 }
+.tt{
+  padding-left: 50px;
+}
 
 body {font-family: Verdana, sans-serif;
   margin: 0;}
@@ -183,13 +186,13 @@ img.hover-shadow {
   padding: 15px;
   width: 100px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 3px;
   color: white;
   border-radius: 0 5px 5px 0;
 }
 
 #mySidenav a:hover {
-  left: 0;
+  left: 200px;
 }
 
 #about {
@@ -198,8 +201,8 @@ img.hover-shadow {
 }
 
 #blog {
-  top: 80px;
-  background-color: #4caf50;
+/*  top: 80px;
+*/  background-color: #4caf50;
 }
 
 #projects {
