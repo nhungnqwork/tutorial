@@ -16,7 +16,7 @@
   padding-left: 50px;
 }
 .video{
-  padding-left: 110px;
+  padding-left: 80px;
 }
 
 
@@ -195,7 +195,7 @@ img.hover-shadow {
   color: white;
   border-radius: 0 5px 5px 0;
   z-index: 3;
-  top: 550px;
+  top: 350px;
 }
 
 #mySidenav a:hover {
